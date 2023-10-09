@@ -4,7 +4,7 @@ Food.com is looking to have more diverse cuisine types within the recipes that t
 
 ## 1. Data
 To examine this question, we will use a dataset that consists of food.com recipes. This dataset includes information about the amount of time, nutritional facts, steps, ingredients, as well as the recipe contributor. It also includes user ratings and interactions (comments) about the recipes. The stakeholders for this project are the content manager for the site as well as the recipe addition and retention manager and team.
-This site was built using [GitHub Pages]([https://pages.github.com/](https://pages.github.com/](https://www.kaggle.com/datasets/shuyangli94/food-com-recipes-and-user-interactions?select=RAW_recipes.csv)https://www.kaggle.com/datasets/shuyangli94/food-com-recipes-and-user-interactions?select=RAW_recipes.csv)).
-Dataset [Food Kaggle Data]([https://pages.github.com/](https://www.kaggle.com/datasets/shuyangli94/food-com-recipes-and-user-interactions?select=RAW_recipes.csv)https://www.kaggle.com/datasets/shuyangli94/food-com-recipes-and-user-interactions?select=RAW_recipes.csv).
+This site was built using [GitHub Pages]([https://pages.github.com/](https://www.kaggle.com/datasets/shuyangli94/food-com-recipes-and-user-interactions?select=RAW_recipes.csv)https://www.kaggle.com/datasets/shuyangli94/food-com-recipes-and-user-interactions?select=RAW_recipes.csv)
+
 
 
