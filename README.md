@@ -11,7 +11,7 @@ After examining the 5 different data sets (ingr_map, RAW_recipes, PP_recipes, Ra
 
 ## 3. Data Wrangling
 
-This was a fairly tidy dataset but there were a few structural issue I needed to fix.
+This was a fairly tidy dataset but there were a few structural issues I needed to fix.
 1.	Merging effectively
 
 The two main data sets I needed to combine were the raw recipes and raw interactions data frames. Because the raw interactions data frame contains multiple reviews and rating for all of the recipes I wanted to create a column that would summarize the ratings and reviews and mke it easier to combine the two data frames. I created a “rating_mean” column that averaged all of the ratings for each recipe and a “polarity_avg” column that averaged all of the polarity scores for each review of a given recipe.
@@ -30,13 +30,18 @@ From here all of the two dataframes as well as the new feature columns were merg
 
 I started by searching for any significant correlations between the numeric attribute variables and the target variables (rating_mean and polarity_avg). Although there seemed to be a higher concentration of higher ratings when the steps, ingredients, and minutes variable for a recipe is low, there were no significant correlations at all.
 
-![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](/Read%20me%20files/correlation%20map.png)
+![Screenshot of correlation map.](/Read%20me%20files/correlation%20map.png)
 
 Next I attempted some dimensionality reduction on the text features with the ngram range of one. From this I noticed that the features with the highest importance belonged in the step category.  After running a correlation matrix I saw no correlations higher than 0.005.
 
 Since I didn’t find any features that seemed to have any significant predictive power on my target variables, I tried extracting text features with longer ngram ranges from the data. The feature importance was still heavy with step features but once again there were no significant correlations between any of the text features and the target variables.
 
-![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](Read%20me%20files/Feature%20importance.png)
+![Screenshot of a feature graph.](Read%20me%20files/Feature%20importance.png)
 
 
 Finally I made some further dimensionality reduction attempts by looking at the correlation between the text features and dropping the features with correlations above 0.75.
+
+
+## 5. Modeling
+
+
