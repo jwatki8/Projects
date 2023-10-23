@@ -13,12 +13,15 @@ After examining the 5 different data sets (ingr_map, RAW_recipes, PP_recipes, Ra
 
 This was a fairly tidy dataset but there were a few structural issue I needed to fix.
 1.	Merging effectively
+
 The two main data sets I needed to combine were the raw recipes and raw interactions data frames. Because the raw interactions data frame contains multiple reviews and rating for all of the recipes I wanted to create a column that would summarize the ratings and reviews and mke it easier to combine the two data frames. I created a “rating_mean” column that averaged all of the ratings for each recipe and a “polarity_avg” column that averaged all of the polarity scores for each review of a given recipe.
 
 2.	Creating text features
+
 There was a lot of text data in the raw recipes dataframe in the ingredients, steps and tag columns. I needed to pull some of the most commonly seen text in these categories to get a base for creating attribute features. In this stage I stuck to pulling only the single ngrams from the columns at first.
 
 3.	Other cleaning
+
 Some other general cleaning I did with this data included dropping all null values, changing some of the numeric columns to floats, updating the ‘minutes’ column to a datetime column and making sure that the “recipe_id’ column is named the same across all dataframes.
 
 From here all of the two dataframes as well as the new feature columns were merged to create our working dataset called “recipe_attributes”.
