@@ -30,7 +30,7 @@ From here all of the two dataframes as well as the new feature columns were merg
 
 I started by searching for any significant correlations between the numeric attribute variables and the target variables (rating_mean and polarity_avg). Although there seemed to be a higher concentration of higher ratings when the steps, ingredients, and minutes variable for a recipe is low, there were no significant correlations at all.
 
-![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](/assets/images/Read%20me%20files/correlation%20map.png)
+![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](/Read%20me%20files/correlation%20map.png)
 
 Next I attempted some dimensionality reduction on the text features with the ngram range of one. From this I noticed that the features with the highest importance belonged in the step category.  After running a correlation matrix I saw no correlations higher than 0.005.
 
