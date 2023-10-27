@@ -44,4 +44,25 @@ Finally I made some further dimensionality reduction attempts by looking at the 
 
 ## 5. Modeling
 
+Since this project aimed to find features that had predictive power for the target variable, I tested a few different regression models on the data. I tested 3 different regression models and the reults were as follows:
+
+### First was a linear regression model:
+
+Our $R^2$ for the train and test sets are 0.069 and 0.063.
+
+Our mean absolute error for the train and test sets are 0.646 and 0.642.
+
+### Next was the Random Forest Regression model:
+
+Our $R^2$ for the train and test sets are 0.093 and 0.088.
+
+Our mean absolute error for the train and test sets are 0.647 and 0.642.
+
+### Lastly, the K-Neighbors Regression model:
+
+Our $R^2$ for the test set is 0.028.
+
+Our mean absolute error for the test set is 0.656.
+
+Looking at our models we can see that our features don’t show much predictive power. I would also like to note that I also fit the model to the rating polarity target variable as well, but the results weren’t much different.  Out of the 3 models, I got the best results from our Random Forest Regression.
 
