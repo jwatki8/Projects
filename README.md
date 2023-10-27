@@ -66,3 +66,12 @@ Our mean absolute error for the test set is 0.656.
 
 Looking at our models we can see that our features don’t show much predictive power. I would also like to note that I also fit the model to the rating polarity target variable as well, but the results weren’t much different.  Out of the 3 models, I got the best results from our Random Forest Regression.
 
+
+### Hyperparameters 
+
+Because I am dealing with a very large data set I ran a RandomizedSearchCV for the hyperparameters individually. This decreased the time for the CV search dramatically. The max_features parameter was the most important to me so I started there using values of 10, 20, 30, 40 and 50. The CV search determined the best max feature parameter was 50.
+
+Nest I wanted to find the best number of estimators. I tested the values 100,200,300 and 400. The best n_estimators parameter was 300.
+
+Next I tested a few values for max_depth. Of the values 2, 4,6 and 8, the best parameter value was 8. Overall the hyperparameter values for this dataset seem to give the best performance when they are larger.
+
