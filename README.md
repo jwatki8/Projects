@@ -75,3 +75,15 @@ Nest I wanted to find the best number of estimators. I tested the values 100,200
 
 Next I tested a few values for max_depth. Of the values 2, 4,6 and 8, the best parameter value was 8. Overall the hyperparameter values for this dataset seem to give the best performance when they are larger.
 
+
+## Results
+
+After applying the model to both data with our tuned hyperparameters the results I got were as follows
+
+
+Our $R^2$ for the train and test sets are 0.134 and 0.105. 
+
+Our mean absolute error for the train and test sets are 0.632 and 0.634.
+
+In comparison to the scores for the review polarity dataset ($R^2$ of test set= 0.089, MAE of test set=0.634), the metrics for the rating mean data set were minimally better so I decided to stick with the rating mean as the target variable. Although the results could be better, using these hyperparameters for the Random Forest Regression Model give us the best metrics we have seen thus far.
+
