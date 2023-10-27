@@ -47,6 +47,8 @@ Finally I made some further dimensionality reduction attempts by looking at the 
 
 ## 5. Modeling
 
+[Full Modeling Report](https://github.com/jwatki8/Projects/blob/main/Capstone%20-%20Modeling%20.ipynb)
+
 Since this project aimed to find features that had predictive power for the target variable, I tested a few different regression models on the data. I tested 3 different regression models and the reults were as follows:
 
 ### First was a linear regression model:
