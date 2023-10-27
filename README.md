@@ -11,6 +11,7 @@ After examining the 5 different data sets (ingr_map, RAW_recipes, PP_recipes, Ra
 
 ## 3. Data Wrangling
 [Full Data Cleaning Report](https://github.com/jwatki8/Projects/blob/main/Capstone%20project%20data%20wrangling%20(4).ipynb)
+
 This was a fairly tidy dataset but there were a few structural issues I needed to fix.
 1.	Merging effectively
 
