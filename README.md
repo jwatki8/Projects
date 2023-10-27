@@ -29,6 +29,8 @@ From here all of the two dataframes as well as the new feature columns were merg
 
 ## 4. EDA
 
+[Full Data Cleaning Report](https://github.com/jwatki8/Projects/blob/main/Capstone%20%20Exploratory%20Data%20Analysis(EDA)%20Draft.ipynb)
+
 I started by searching for any significant correlations between the numeric attribute variables and the target variables (rating_mean and polarity_avg). Although there seemed to be a higher concentration of higher ratings when the steps, ingredients, and minutes variable for a recipe is low, there were no significant correlations at all.
 
 ![Screenshot of correlation map.](/Read%20me%20files/correlation%20map.png)
