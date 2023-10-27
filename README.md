@@ -69,7 +69,7 @@ Looking at our models we can see that our features don’t show much predictive 
 
 ### Hyperparameters 
 
-Because I am dealing with a very large data set I ran a RandomizedSearchCV for the hyperparameters individually. This decreased the time for the CV search dramatically. The max_features parameter was the most important to me so I started there using values of 10, 20, 30, 40 and 50. The CV search determined the best max feature parameter was 50.
+Because I am dealing with a very large data set, I ran a RandomizedSearchCV for the hyperparameters individually. This decreased the time for the CV search dramatically. The max_features parameter was the most important to me so I started there using values of 10, 20, 30, 40 and 50. The CV search determined the best max feature parameter was 50.
 
 Nest I wanted to find the best number of estimators. I tested the values 100,200,300 and 400. The best n_estimators parameter was 300.
 
