@@ -101,4 +101,4 @@ After building and applying our model, it seems that the recipe attribute catego
 
 Maybe a longer ngram range for some of the text data would give us more specific features that could hold more significant and precise predictive power. Another step could be actually create a ‘cuisine type’ recipe attribute for all of the recipes. This could get us a step closer to more concisely categorizing our recipes as well as give us another attribute to use as a predictive feature for our user satisfaction variable. I believe that categorizing the recipes by cuisine type would be the most productive next step.
 
-
+Overall it looks like there is more work that needs to be done to use if we want to make use of our recipe attributes for predicting user interactions. Although this first pass hasn’t shown a significant relationship between the features and user engagement, I think it is worth pursuing further.
