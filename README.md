@@ -71,6 +71,7 @@ Our mean absolute error for the test set is 0.656.
 
 Looking at our models we can see that our features don’t show much predictive power. I would also like to note that I also fit the model to the rating polarity target variable as well, but the results weren’t much different.  Out of the 3 models, I got the best results from our Random Forest Regression.
 
+![Screenshot of Random Forest Regression.](/Read%20me%20files/random%20forest%20plot%201.png)
 
 ### Hyperparameters 
 
