@@ -77,14 +77,14 @@ Looking at our models we can see that our features don’t show much predictive 
 
 Because I am dealing with a very large data set, I ran a RandomizedSearchCV for the hyperparameters individually. This decreased the time for the CV search dramatically. The max_features parameter was the most important to me so I started there using values of 10, 20, 30, 40 and 50. The CV search determined the best max feature parameter was 50.
 
-Nest I wanted to find the best number of estimators. I tested the values 100,200,300 and 400. The best n_estimators parameter was 300.
+Next I wanted to find the best number of estimators. I tested the values 100,200,300 and 400. The best n_estimators parameter was 300.
 
 Next I tested a few values for max_depth. Of the values 2, 4,6 and 8, the best parameter value was 8. Overall the hyperparameter values for this dataset seem to give the best performance when they are larger.
 
 
 ## Results
 
-After applying the model to both data with our tuned hyperparameters the results I got were as follows
+After applying the model to both data splits with our tuned hyperparameters the results I got were as follows
 
 
 Our $R^2$ for the train and test sets are 0.134 and 0.105. 
@@ -92,4 +92,13 @@ Our $R^2$ for the train and test sets are 0.134 and 0.105.
 Our mean absolute error for the train and test sets are 0.632 and 0.634.
 
 In comparison to the scores for the review polarity dataset ($R^2$ of test set= 0.089, MAE of test set=0.634), the metrics for the rating mean data set were minimally better so I decided to stick with the rating mean as the target variable. Although the results could be better, using these hyperparameters for the Random Forest Regression Model give us the best metrics we have seen thus far.
+
+
+
+## Conclusions
+
+After building and applying our model, it seems that the recipe attribute categories don’t have much predictive power over our rating mean. All of the metrics for model evaluation where fairly low. I think a good future approach would be to create some more solid feature categories with the test descriptions. 
+
+Maybe a longer ngram range for some of the text data would give us more specific features that could hold more significant and precise predictive power. Another step could be actually create a ‘cuisine type’ recipe attribute for all of the recipes. This could get us a step closer to more concisely categorizing our recipes as well as give us another attribute to use as a predictive feature for our user satisfaction variable. I believe that categorizing the recipes by cuisine type would be the most productive next step.
+
 
