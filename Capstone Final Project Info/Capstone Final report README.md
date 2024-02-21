@@ -39,7 +39,7 @@ Next I attempted some dimensionality reduction on the text features with the ngr
 
 Since I didn’t find any features that seemed to have any significant predictive power on my target variables, I tried extracting text features with longer ngram ranges from the data. The feature importance was still heavy with step features but once again there were no significant correlations between any of the text features and the target variables.
 
-![Screenshot of a feature graph.](Read%20me%20files/Feature%20importance.png)
+![Screenshot of feature graph.](Read%20me%20files/Feature%20importance.png)
 
 
 Finally I made some further dimensionality reduction attempts by looking at the correlation between the text features and dropping the features with correlations above 0.75.
