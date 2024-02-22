@@ -10,7 +10,7 @@ To examine this question, we will use a dataset that consists of food.com recipe
 After examining the 5 different data sets (ingr_map, RAW_recipes, PP_recipes, Raw_interactions, PP_users), I determined that the raw recipes and raw interactions files contained the most useful data. My aim was to find recipe features that had a strong effect on the ratings of the recipes. With so much text and numeric data pertaining to the attributes of the recipes I first needed to pull more generalized features and components from the data through descriptive statistics and text feature analysis. From there I looked at how the features correlated with two different target variables for the recipes which were the mean rating of the recipe and the average polarity score of the reviews for the recipe. From here I tested a few models to see which had the best predictive power for the target variables.
 
 ## 3. Data Wrangling
-[Full Data Cleaning Report](https://github.com/jwatki8/Projects/blob/main/Capstone%20project%20data%20wrangling%20.ipynb)
+[Full Data Cleaning Report](https://github.com/jwatki8/Projects/blob/main/Capstone%20%20Exploratory%20Data%20Analysis%20(EDA).ipynb)
 
 This was a fairly tidy dataset but there were a few structural issues I needed to fix.
 ### 1.	Merging effectively
