@@ -35,7 +35,7 @@ I started by searching for any significant correlations between the numeric attr
 
 ![Screenshot of correlation map.](/Read%20me%20files/correlation%20map.png)
 
-Next I attempted some dimensionality reduction on the text features with the ngram range of one. From this I noticed that the features with the highest importance belonged in the step category.  After running a correlation matrix I saw no correlations higher than 0.005.
+Next I attempted some dimensionality reduction on the text features with the ngram range of one. After running a correlation matrix I saw no correlations higher than 0.005. I also jumped ahead and looked at some preliminary feature importance estimates. From this I noticed that the features with the highest importance belonged in the step category.
 
 Since I didn’t find any features that seemed to have any significant predictive power on my target variables, I tried extracting text features with longer ngram ranges from the data. The feature importance was still heavy with step features but once again there were no significant correlations between any of the text features and the target variables.
 
