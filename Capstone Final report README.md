@@ -10,7 +10,7 @@ To examine this question, we will use a dataset that consists of food.com recipe
 After examining the 5 different data sets (ingr_map, RAW_recipes, PP_recipes, Raw_interactions, PP_users), I determined that the raw recipes and raw interactions files contained the most useful data. My aim was to find recipe features that had a strong effect on the ratings of the recipes. With so much text and numeric data pertaining to the attributes of the recipes I first needed to pull more generalized features and components from the data through descriptive statistics and text feature analysis. From there I looked at how the features correlated with two different target variables for the recipes which were the mean rating of the recipe and the average polarity score of the reviews for the recipe. From here I tested a few models to see which had the best predictive power for the target variables.
 
 ## 3. Data Wrangling
-[Full Data Cleaning Report](https://github.com/jwatki8/Projects/blob/main/Capstone%20project%20data%20wrangling%20(4).ipynb)
+[Full Data Cleaning Report](https://github.com/jwatki8/Projects/blob/main/Capstone%20project%20data%20wrangling%20.ipynb)
 
 This was a fairly tidy dataset but there were a few structural issues I needed to fix.
 ### 1.	Merging effectively
@@ -29,17 +29,17 @@ From here all of the two dataframes as well as the new feature columns were merg
 
 ## 4. EDA
 
-[Full EDA Report](https://github.com/jwatki8/Projects/blob/main/Capstone%20%20Exploratory%20Data%20Analysis(EDA)%20Draft.ipynb)
+[Full EDA Report](https://github.com/jwatki8/Projects/blob/main/Capstone%20%20Exploratory%20Data%20Analysis(EDA).ipynb)
 
 I started by searching for any significant correlations between the numeric attribute variables and the target variables (rating_mean and polarity_avg). Although there seemed to be a higher concentration of higher ratings when the steps, ingredients, and minutes variable for a recipe is low, there were no significant correlations at all.
 
 ![Screenshot of correlation map.](/Read%20me%20files/correlation%20map.png)
 
-Next I jumped ahead to examine the feature importances of some of the text features. I started with the text features with the ngram range of one. From this I noticed that the features with the highest importance belonged in the step category.  After running a correlation matrix I saw no correlations higher than 0.005.
+Next I attempted some dimensionality reduction on the text features with the ngram range of one. From this I noticed that the features with the highest importance belonged in the step category.  After running a correlation matrix I saw no correlations higher than 0.005.
 
 Since I didn’t find any features that seemed to have any significant predictive power on my target variables, I tried extracting text features with longer ngram ranges from the data. The feature importance was still heavy with step features but once again there were no significant correlations between any of the text features and the target variables.
 
-![Screenshot of a feature graph.](Read%20me%20files/Feature%20importance.png)
+![Screenshot of feature graph.](Read%20me%20files/Feature%20importance.png)
 
 
 Finally I made some further dimensionality reduction attempts by looking at the correlation between the text features and dropping the features with correlations above 0.75.
